@@ -1,7 +1,7 @@
 const express = require("express");
 const functions = require("./functions")
 const server = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require("path")
 
 server.set("view engine", "hbs");
